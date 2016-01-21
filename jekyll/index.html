@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<div class="home">
+	<div class="slideshow">
+	<div class="slideshow-slides welcomeslides">
+		<figure>
+			<img src={{ "/assets/slideshow_1.jpg" | prepend: site.baseurl }}
+			width=100%/>
+		</figure>
+		<figure>
+			<img src={{ "/assets/slideshow_2.jpg" | prepend: site.baseurl }}
+			width=100%/>
+		</figure>
+		<figure>
+			<img src={{ "/assets/slideshow_3.jpg" | prepend: site.baseurl }}
+			width=100%/>
+		</figure>
+		<figure>
+			<img src={{ "/assets/slideshow_4.jpg" | prepend: site.baseurl }}
+			width=100%/>
+		</figure>
+	</div>
+	</div>
+	<script src={{ "/scripts/hammer.min.js" | prepend: site.baseurl }}
+			></script>
+	<script src={{ "/scripts/slideshow.js" | prepend: site.baseurl }} >
+	</script>
+
+  <h1>Welcome</h1>
+	<p>Welcome to the homepage of GCF @ UCSD. We have something happening
+	every week; check out the 
+	<a href={{ "/events/" | prepend: site.baseurl }}>events</a>
+	page for the calendar!</p>
+
+	<h2>Announcements</h2>
+	<ul>
+		{% assign current_time = site.time | date: '%s' %}
+		{% for announcement in site.categories.announcements limit 3 %}
+		  {% assign announcement_time = announcement.date | date: '%s' %}
+			{% if announcment_time > current_time %}
+		<li> <a href={{ announcement.url }}>{{ announcement.title }}</a>
+		</li>
+			{% endif %}
+		{% endfor %}
+	</ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
