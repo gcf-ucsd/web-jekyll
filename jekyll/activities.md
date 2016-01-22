@@ -35,5 +35,5 @@ document.getElementById("obf1").innerHTML="<n uers=\"znvygb:enpury.rzrevar@tznvy
 ## <a name="PrayerMeetings"></a>Prayer Meetings ##
 Every week we spend an hour in prayer together. Traditionally, these
 have been held on Monday evenings, but we are considering moving the
-time. Stay tuned and check the [events]({{ "/events" | prepend:
-site.baseurl }}) page.
+time. Stay tuned and check the 
+[events]({{ "/events" | prepend: site.baseurl }}) page.

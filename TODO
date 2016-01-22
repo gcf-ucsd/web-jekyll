@@ -1,9 +1,10 @@
-* Details on small groups
-* Church list/email encryption
-  -- solved, just need to link to google doc and populate the google doc
+Things to do (projects to work on):
+* the activities page uses inline javascript to accomplish ROT13
+  encryption of email addresses, primarily to lower spambot reading of
+  the page. It would be nice to move this to external scripts so that
+  editing the page is easier. (Alternatively, we could come up with
+  another obfuscation technique.)
+* Populate resources page more
+* get rvm/jekyll running on acms account
 
-1. Switch to git. We're going to want to use github anyway.
-2. Check whether what we have locally matches what's installed on gcf.ucsd.edu
-3. Populate church list document
-4. Find a place to put link to church list doc
-5. ACMS switchover
+vim: tw=72:ts=4
