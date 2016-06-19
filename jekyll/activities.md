@@ -26,6 +26,7 @@ group does not. Once these have been set up, they will be listed here.
 
 Traditionally, there is at least one small group that meets in (or near)
 the graduate housing, and one that meets on campus.
+
 <!-- This is how we list small groups with ROT13 emails
 <ul>
 <li>Mesa/OMS: 7:30pm Thursdays. Contact
