@@ -48,6 +48,6 @@ of the ordinary:
 {% for event in site.categories.events %}
   {% assign event_date = event.date | date: '%s' | plus: 0 %}
 	{% if event_date < current_time %}
-* [{{ event.title }}]({{ event.url }}) on {{ event.date | date_to_long_string }}
+* [{{ event.title }}]({{ site.url }}{{ site.baseurl }}{{ event.url }}) on {{ event.date | date_to_long_string }}
 	{% endif %}
 {% endfor %}

@@ -5,8 +5,8 @@ description: > # this means to ignore newlines until "baseurl:"
   We are a group of graduate students, post-docs, and others who gather
   together to fellowship, worship, and learn what it means to be
   followers of Jesus in an academic setting.
-baseurl: "/~gcf" # the subpath of your site, e.g. /blog/
-url: "http://acsweb.ucsd.edu" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "http://localhost:4000" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
