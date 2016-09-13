@@ -8,19 +8,26 @@ At present, we engage in three regularly scheduled activities during
 fall, winter, and spring quarters: [large group](#LargeGroup), [small
 groups](#SmallGroups), and weekly [prayer meetings](#PrayerMeetings).
 Each of these events shows up on the calendar on the 
-[events]({{ "/events" | prepend: site.baseurl }}) page.
+[events]({{ "/events" | prepend: site.baseurl | prepend: site.url }}) page.
+
+During summer, we tend to meet as a large group every week, working our
+way through one or more studies.
 
 ## <a name="LargeGroup"></a>Large Group ##
-Every other week while classes are in session, we convene as a whole
-group for some time of fellowship and worship. Frequently large group
-meetings feature a discussion of a topic pertinant to Christian
-academics and intellectuals or a presentation by a speaker.
+Every other week while classes are in session (not during summer), we
+convene as a whole group for some time of fellowship and worship.
+Frequently large group meetings feature a discussion of a topic
+pertinant to Christian academics and intellectuals or a presentation by
+a speaker.
 
 ## <a name="SmallGroups"></a>Small Groups ##
-On weeks during which there is no large group meeting, we split into
-meetings of small groups. At present, there are three; their times and
-places of meeting, as well as principal contacts, are given below:
+During the school year, small groups meet during the weeks that large
+group does not. Once these have been set up, they will be listed here.
 
+Traditionally, there is at least one small group that meets in (or near)
+the graduate housing, and one that meets on campus.
+
+<!-- This is how we list small groups with ROT13 emails
 <ul>
 <li>Mesa/OMS: 7:30pm Thursdays. Contact
 <span id="obf1"><script type="text/javascript">
@@ -31,9 +38,4 @@ document.getElementById("obf1").innerHTML="<n uers=\"znvygb:enpury.rzrevar@tznvy
 <li>Off-campus: 7:00pm Wednesdays. Contact
 <span id="obf3"><script>document.getElementById("obf3").innerHTML="<n uers=\"znvygb:xhn.wrerzl@tznvy.pbz\" gnetrg=\"_oynax\">xhn.wrerzl@tznvy.pbz</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script><noscript><span style="unicode-bidi:bidi-override;direction:rtl;">moc.liamg@ymerej.auk</span></noscript></span></li>
 </ul>
-
-## <a name="PrayerMeetings"></a>Prayer Meetings ##
-Every week we spend an hour in prayer together. Traditionally, these
-have been held on Monday evenings, but we are considering moving the
-time. Stay tuned and check the 
-[events]({{ "/events" | prepend: site.baseurl }}) page.
+-->
