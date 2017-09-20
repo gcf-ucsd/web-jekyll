@@ -37,7 +37,8 @@ limiting it to 3, but it's easy to adjust the following line.
 The calendar above contains all GCF events. Here are some that are out
 of the ordinary:
 {% for event in site.categories.events reversed %}
-  {% assign event_date = event.date | date: '%s' | plus: 0 %}
+  {% capture event_date %}{{event.date | date: '%s'}}{% endcapture %}
+  {% assign event_date = event_date | plus: 0 %}
 	{% if event_date >= current_time and upcoming_remaining > 0 %}
 * [{{ event.title }}]({{ site.url }}{{ site.baseurl }}{{ event.url }}) on {{ event.date | date_to_long_string }}
 		{% assign upcoming_remaining = upcoming_remaining | minus:1 %}
