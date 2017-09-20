@@ -36,14 +36,13 @@ layout: default
 
 	<h2>Announcements</h2>
 	<ul>
-	{% capture current_time %}
-  		{{ site.time | date: '%s' }}
-	{% endcapture %}
-	{% assign current_time = current_time | plus:0 %}
-		{% for post in site.tags.announcement limit 3 %}
-		{% assign announcement_time = post.date | date: '%s' | plus: 0 %}
-		{% if announcement_time >= current_time %}
-		<li> <a href={{ post.url | prepend: site.basurl | prepend: site.url }}>{{ post.title }}</a> </li>
+	{% capture current_time %}{{site.time | date: '%s'}}{% endcapture %}
+	{% assign current_time = current_time | plus: 0 %}
+		{% for post in site.tags.announcement %}
+		{% capture post_time %}{{post.date | date: '%s'}}{% endcapture %}
+		{% assign post_time = post_time | plus: 0 %}
+		{% if post_time > current_time %}
+		<li> <a href={{post.url | prepend: site.basurl | prepend: site.url}}>{{ post.title }}</a> </li>
 		{% endif %}
 		{% endfor %}
 	</ul>
